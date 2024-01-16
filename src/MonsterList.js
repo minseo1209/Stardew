@@ -1,5 +1,5 @@
 import React from 'react';
-import Monster from './monster';
+
 import { useNavigate } from 'react-router-dom';
 
 function MonsterList({ monsters, category }) {

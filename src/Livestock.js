@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Livestock(props) {
   let { Navigation } = props;
-  let [livestockData, setLivestockData] = useState([]);
+
   let [chicken, setChicken] = useState([]);
   let [cow, setCow] = useState([]);
 
@@ -16,7 +16,7 @@ function Livestock(props) {
         let allData = response.data;
         let chicken = allData.닭장 || []; // 닭장 데이터
         let cow = allData.외양간 || []; // 외양간 데이터
-        setLivestockData(response.data);
+
         setChicken(chicken, '닭장');
         setCow(cow, '외양간');
       } catch (error) {

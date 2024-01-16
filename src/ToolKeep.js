@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Toolkeep(props) {
   let { Navigation } = props;
-  let [allData, setAllData] = useState([]);
+
   let [homi, setHomi] = useState([]);
   let [ax, setAx] = useState([]);
   let [pick, setPick] = useState([]);
@@ -26,7 +26,7 @@ function Toolkeep(props) {
         let fish = allData.낚싯대 || [];
         let trash = allData.쓰레기통 || [];
         let etc = allData.기타 || [];
-        setAllData(allData, '전체');
+
         setEct(etc, '기타');
         setHomi(homi, '호미');
         setPick(pick, '곡괭이');

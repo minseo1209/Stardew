@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Fish(props) {
   let { Navigation } = props;
-  let [allData, setAllData] = useState([]);
+
   let [fishing, setFishing] = useState([]);
   let [market, setMarket] = useState([]);
   let [legend, setLegend] = useState([]);
@@ -21,7 +21,7 @@ function Fish(props) {
         let legend = allData.전설 || [];
         let trap = allData.통발 || [];
         let etc = allData.외 || [];
-        setAllData(allData, '전체');
+
         setTrap(trap, '통발');
         setFishing(fishing, '낚시');
         setLegend(legend, '전설');

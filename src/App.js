@@ -1,4 +1,3 @@
-import React, { useRef, useEffect, useState } from 'react';
 import Crops from '../src/crops';
 import Livestock from './Livestock';
 import Fertilizer from './Fertilizer';
@@ -9,15 +8,7 @@ import Ore from './ore';
 import Monster from './monster';
 import Fish from './Fish';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {
-  Button,
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  InputGroup,
-  FormControl,
-} from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import './App.css';
 
 function App() {
@@ -127,16 +118,16 @@ function App() {
 }
 
 function SteamPage() {
-  let goSteam = (window.location.href =
-    'https://store.steampowered.com/app/413150/Stardew_Valley/?l=koreana');
+  window.location.href =
+    'https://store.steampowered.com/app/413150/Stardew_Valley/?l=koreana';
 }
 function AppPage() {
-  let goApp = (window.location.href =
-    'https://apps.apple.com/kr/app/stardew-valley/id1406710800');
+  window.location.href =
+    'https://apps.apple.com/kr/app/stardew-valley/id1406710800';
 }
 function GooglePage() {
-  let goGoogle = (window.location.href =
-    'https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley&hl=ko-KO');
+  window.location.href =
+    'https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley&hl=ko-KO';
 }
 
 function Navigation() {

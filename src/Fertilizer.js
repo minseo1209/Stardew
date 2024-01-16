@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Fertilizer(props) {
   let { Navigation } = props;
-  let [allData, setAllData] = useState([]);
+
   let [fertilizer, setFertilizer] = useState([]);
   let [growth, setGrowth] = useState([]);
   let [soil, setSoil] = useState([]);
@@ -18,7 +18,7 @@ function Fertilizer(props) {
         let fertilizer = allData.비료 || [];
         let growth = allData.토양 || [];
         let soil = allData.촉진제 || [];
-        setAllData(response.data);
+
         setFertilizer(fertilizer, '비료');
         setGrowth(growth, '토양');
         setSoil(soil, '촉진제');

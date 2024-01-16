@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Weapon(props) {
   let { Navigation } = props;
-  let [allData, setAllData] = useState([]);
+
   let [ability, setAbility] = useState([]);
   let [sword, setSword] = useState([]);
   let [knife, setKnife] = useState([]);
@@ -22,7 +22,6 @@ function Weapon(props) {
         let hammer = allData.둔기 || [];
         let slingshot = allData.새총 || [];
 
-        setAllData(allData, '전체');
         setAbility(ability, '능력치');
         setHammer(hammer, '둔기');
         setKnife(knife, '단검');

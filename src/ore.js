@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Ore(props) {
   let { Navigation } = props;
-  let [allData, setAllData] = useState([]);
+
   let [quartz, setQuartz] = useState([]);
   let [gem, setGem] = useState([]);
   let [mineral, setMineral] = useState([]);
@@ -19,7 +19,7 @@ function Ore(props) {
         let gem = allData.보석 || [];
         let mineral = allData.광물 || [];
         let process = allData.정동석 || [];
-        setAllData(allData, '전체');
+
         setGem(gem, '보석');
         setMineral(mineral, '광물');
         setProcess(process, '정동석');
