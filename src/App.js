@@ -31,21 +31,33 @@ function App() {
               <div className="App">
                 <Navigation></Navigation>
                 <div className="main">
-                  <img src="./img/Main_Logo.png"></img>
+                  <img src="./img/Main_Logo.png" alt="Title"></img>
                 </div>
                 {/* 다운로드 페이지 이동  */}
                 <div>
                   <button className="Apple" onClick={AppPage}>
                     App Store
-                    <img className="GameImg" src="./img/apple.png"></img>
+                    <img
+                      className="GameImg"
+                      src="./img/apple.png"
+                      alt="icon"
+                    ></img>
                   </button>
                   <button className="Google" onClick={GooglePage}>
                     Google Play
-                    <img className="GameImg" src="./img/google.png"></img>
+                    <img
+                      className="GameImg"
+                      src="./img/google.png"
+                      alt="icon"
+                    ></img>
                   </button>
                   <button className="Steam" onClick={SteamPage}>
                     Steam
-                    <img className="GameImg" src="./img/steam.png"></img>
+                    <img
+                      className="GameImg"
+                      src="./img/steam.png"
+                      alt="icon"
+                    ></img>
                   </button>
                 </div>
                 <div className="StroryBox">
@@ -65,7 +77,7 @@ function App() {
                       스타듀 밸리에 있단다.
                     </p>
                     <div className="ImageContainer">
-                      <img src="./img/Grandpa.png"></img>
+                      <img src="./img/Grandpa.png" alt="NPC"></img>
                     </div>
                   </div>
                 </div>
@@ -133,7 +145,7 @@ function Navigation() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">
-            <img src={`./img/logo.png`}></img>
+            <img src={`./img/logo.png`} alt="logo"></img>
           </Navbar.Brand>
           <Nav className="me-auto">
             <NavDropdown title="농장" id="basic-nav-dropdown">
